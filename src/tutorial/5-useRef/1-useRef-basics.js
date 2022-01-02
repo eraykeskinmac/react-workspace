@@ -11,7 +11,7 @@ const UseRefBasics = () => {
   };
   useEffect(() => {
     console.log(refContainer.current);
-    refContainer.current.focus;
+    refContainer.current.focus();
   });
 
   return (
@@ -22,7 +22,7 @@ const UseRefBasics = () => {
           <button type='submit'>submit</button>
         </div>
       </form>
-      <div>hello world</div>
+      <div ref={divContainer}>hello world</div>
     </>
   );
 };
